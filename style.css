@@ -15,7 +15,17 @@ span{
     left: 50%;
     transform: translate(-50%,-50%);
     pointer-events: none;
-    animation: animate 6s ;
+    animation: animate 6s linear;
+}
+
+h1{
+    color: rgb(206, 91, 91);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: animate2 10s ;
+    word-spacing: 15px;
 }
 
 @keyframes animate {
@@ -27,6 +37,23 @@ span{
     }
     100% {
         transform: translate(-50%,-5000%);
+        opacity: 0;
+        filter: hue-rotate(1000deg);
+    }
+
+    @keyframes animate2 {
+    0%{
+        transform: translate(-50%,-50%); 
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        transform: translate(-50%,-75%); 
+        opacity: 0.5;
+        filter: hue-rotate(500deg);
+    }
+    100%{
+        transform: translate(-50%,-5000%); 
         opacity: 0;
         filter: hue-rotate(1000deg);
     }
