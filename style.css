@@ -19,12 +19,12 @@ span{
 }
 
 h1{
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%;  
     transform: translate(-50%,-50%);
-    animation: animate2 10s ;
+    animation: animate2 30s ;
     word-spacing: 15px;
 }
 
@@ -33,28 +33,23 @@ h1{
         transform: translate(-50%,-50%);
         opacity: 1;
         filter: hue-rotate(100deg);
-        
     }
     100% {
         transform: translate(-50%,-5000%);
         opacity: 0;
         filter: hue-rotate(1000deg);
     }
+}
 
-    @keyframes animate2 {
+@keyframes animate2 {
     0%{
         transform: translate(-50%,-50%); 
         opacity: 1;
-        filter: hue-rotate(0deg);
-    }
-    50%{
-        transform: translate(-50%,-75%); 
-        opacity: 0.5;
         filter: hue-rotate(500deg);
     }
     100%{
         transform: translate(-50%,-5000%); 
-        opacity: 0;
+        opacity: 0.5;
         filter: hue-rotate(1000deg);
     }
 }
