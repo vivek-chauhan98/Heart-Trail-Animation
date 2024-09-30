@@ -14,6 +14,10 @@ bodyEl.addEventListener("mousemove", function (event) {
     setTimeout(() => {
         spanEl.remove();
     },3000);
-})
+});
+
+setTimeout(function() {
+    document.querySelector("h1").remove();
+}, 10000);
 
 
